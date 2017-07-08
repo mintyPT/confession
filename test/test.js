@@ -8,41 +8,7 @@ var cheerio = require("cheerio");
 const html = fs.readFileSync(path.join(__dirname, "sample.html"), "utf-8");
 const $ = cheerio.load(html);
 
-// const extractItem = exports.extractItem = (extractors, $) => {
-// const extractItems = exports.extractItems = (selector, extractors, $) => {
-
-var lib = require("../lib");
-
-//const result = lib.confess(html, {'title': ['selector:h1', 'text']})
-
-//expect(result).to.equal({title: 'Title'});
-
-// const result = lib.extractItems('ul li', {text: ['text']}, $);
-
-//console.log($('title').text())
-// console.log(result);
-
-// console.log('----->', lib.extractItems)
-// console.log(result);
-// console.log('-----')
-// // console.log(html);
-// console.log('-----')
-// // console.log($);
-// console.log('-----')
-
-// const schema = {
-//     // url: COMPARIS_URL,
-//     items: '[data-id]',
-//     item: {
-//         price: ['selector:.item-price', 'text', 'replace:CHF| ', 'remove:\'', 'trim'],
-//         title: ['selector:a.title', 'text'],
-//         link: ['selector:a.title', 'attribute:href', 'preprend:https://fr.comparis.ch'],
-//         time: ['selector:time', 'text'],
-//         rating: ['selector:.item-rating', 'text', 'trim'],
-//         address: ['selector:address', 'text', 'trim', 'split:\n', 'trim', 'join:, '],
-//         specifications: ['selector:ul.specifications li', 'toArray', 'map.text', 'trim', 'join:, ']
-//     }
-// }
+var lib = require("../index");
 
 describe("confession", function() {
     it("should parse string commands", function() {
