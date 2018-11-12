@@ -1,22 +1,20 @@
 # Confession
 
-Helper to extract confessions (information) from webpages.
-
-## Code Example
-
-For now, check the tests.
+Helper to extract confessions (information) from webpages I built this mostly for my own use and since I was not happy with the first version of my code, I refactores and rewrote it. 
 
 ## Motivation
 
 I was tired of coding multiple times the same logic for scrappers so I put some of it inside a small package. It's nothing new, just helpful.
 
-## Installation
-
-```npm i -S confession```
-
-## API Reference
+## Code Example && API Reference
 
 For now, check the tests.
+
+
+## Installation
+
+```npm i confession```
+
 
 ## Tests
 
